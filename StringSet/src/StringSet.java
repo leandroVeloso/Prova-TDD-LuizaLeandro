@@ -13,4 +13,9 @@ public class StringSet {
 		return true;
 	}
 
+	public boolean adiciona(String texto) {
+		// TODO Auto-generated method stub
+		return true;
+	}
+
 }
