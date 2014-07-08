@@ -31,8 +31,10 @@ public class StringSet {
 	}
 
 	public boolean verificaContem(String texto) {
-		// TODO Auto-generated method stub
-		return true;
+		if(stringSet.contains(texto)){
+			return true;
+		}
+		return false;
 	}
 
 }
