@@ -49,6 +49,8 @@ public class TestaStringSet {
 		obj1.adicionaTexto("Texto2");
 		obj1.adicionaTexto("Texto3");
 		assertEquals(3, obj1.retornaQuantidade());
+		obj1.adicionaTexto("Texto4");
+		assertEquals(4, obj1.retornaQuantidade());
 	}
 
 }
