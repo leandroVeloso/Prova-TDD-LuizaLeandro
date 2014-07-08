@@ -7,10 +7,14 @@ import org.junit.Test;
 public class TestaStringSet {
 
 	StringSet obj1;
+	StringSet obj2;
+	StringSet obj3;
 
 	@Before
 	public void setUp() throws Exception {
 		obj1 = new StringSet();
+		obj2 = new StringSet();
+		obj3 = new StringSet();
 	}
 
 	@Test
@@ -51,6 +55,20 @@ public class TestaStringSet {
 		assertEquals(3, obj1.retornaQuantidade());
 		obj1.adicionaTexto("Texto4");
 		assertEquals(4, obj1.retornaQuantidade());
+	}
+	
+	@Test
+	public void deveUnirStringSets() throws StringNullException{
+		obj1.adicionaTexto("Texto1");
+		obj1.adicionaTexto("Texto2");
+		obj2.adicionaTexto("Texto3");
+		obj2.adicionaTexto("Texto4");
+		obj3.adicionaTexto("Texto1");
+		obj3.adicionaTexto("Texto2");
+		obj3.adicionaTexto("Texto3");
+		obj3.adicionaTexto("Texto4");
+		
+		assertEquals(obj3, obj1.uneStringSets(obj2));
 	}
 
 }
