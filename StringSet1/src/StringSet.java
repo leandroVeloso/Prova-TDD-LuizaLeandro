@@ -38,8 +38,11 @@ public class StringSet {
 	}
 
 	public boolean removeTexto(String texto) {
-		// TODO Auto-generated method stub
-		return true;
+		if(stringSet.contains(texto)){
+			stringSet.remove(texto);
+			return true;
+		}
+		return false;
 	}
 
 }
