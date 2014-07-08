@@ -40,6 +40,15 @@ public class TestaStringSet {
 	public void deveRemoverString() throws StringNullException {
 		obj1.adicionaTexto("Texto1");
 		assertTrue(obj1.removeTexto("Texto1"));
+		assertFalse(obj1.removeTexto("Texto1"));
+	}
+	
+	@Test
+	public void deveRetornarQuantidadeDeStrings() throws StringNullException {
+		obj1.adicionaTexto("Texto1");
+		obj1.adicionaTexto("Texto2");
+		obj1.adicionaTexto("Texto3");
+		assertEquals(3, obj1.retornaQuantidade());
 	}
 
 }
