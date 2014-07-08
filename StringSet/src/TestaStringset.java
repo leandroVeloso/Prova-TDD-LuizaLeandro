@@ -14,9 +14,13 @@ public class TestaStringset {
 	}
 
 	@Test
-	public void naoDeveSerNuloOuVazia() {
-		assertFalse(obj1.verificaString(""));
+	public void naoDeveSerVazia() throws StringNullException {
 		assertFalse(obj1.verificaString(null));
+	}
+	
+	@Test (expected = StringNullException.class)
+	public void deveLancarExcecaoQuandoNulo() throws StringNullException {
+		obj1.verificaString(null);
 	}
 
 }
