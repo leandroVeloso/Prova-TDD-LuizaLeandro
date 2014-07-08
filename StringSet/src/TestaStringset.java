@@ -10,7 +10,7 @@ public class TestaStringset {
 
 	@Before
 	public void setUp() throws Exception {
-		obj1 = new StringSet());
+		obj1 = new StringSet();
 	}
 
 	@Test
