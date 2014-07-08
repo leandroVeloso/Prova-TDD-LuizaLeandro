@@ -119,7 +119,9 @@ public class TestaStringSet {
 		obj1.adicionaTexto("Texto2");
 		
 		assertTrue(Arrays.toString(enumeracaoEsperada).equals(obj1.enumeraStringSet().toString()));
-		
+		obj1.adicionaTexto("Texto3");
+		assertFalse(Arrays.toString(enumeracaoEsperada).equals(obj1.enumeraStringSet().toString()));
+
 	}
 
 }

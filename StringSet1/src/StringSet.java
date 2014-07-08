@@ -84,10 +84,12 @@ public class StringSet {
 	}
 
 	public String enumeraStringSet() {
-		String [] enumeracaoEsperada = new String[3];
-		enumeracaoEsperada[0] = "0-Texto0";
-		enumeracaoEsperada[1] = "1-Texto1";
-		enumeracaoEsperada[2] = "2-Texto2";
+		
+		String [] enumeracaoEsperada = new String[stringSet.size()];
+		
+		for(int i=0; i<stringSet.size(); i++){
+			enumeracaoEsperada[i]=i+"-"+stringSet.get(i);
+		}
 		
 		System.out.println(Arrays.toString(enumeracaoEsperada));
 		
