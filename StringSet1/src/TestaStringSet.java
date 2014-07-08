@@ -84,11 +84,11 @@ public class TestaStringSet {
 		obj1.adicionaTexto("Texto2");
 		obj1.adicionaTexto("Texto3");
 		
-		obj1.adicionaTexto("Texto2");
+		obj2.adicionaTexto("Texto2");
 		
 		obj1.retornaInterseccao(obj2);
 		
-		assertEquals("Texto1", obj1.retornaQuantidade());
+		assertEquals(1, obj1.retornaQuantidade());
 	}
 
 }

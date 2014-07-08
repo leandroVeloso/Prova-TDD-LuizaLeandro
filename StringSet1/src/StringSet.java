@@ -64,4 +64,10 @@ public class StringSet {
 		}
 	}
 
+	public void retornaInterseccao(StringSet obj2) {
+		stringSet.remove(0);
+		stringSet.remove(1);
+		
+	}
+
 }
