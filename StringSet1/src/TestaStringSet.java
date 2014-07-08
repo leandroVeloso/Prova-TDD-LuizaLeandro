@@ -25,14 +25,21 @@ public class TestaStringSet {
 	
 	@Test
 	public void deveAdicionarString() throws StringNullException {
-		assertTrue(obj1.adiciona("Texto1"));
-		assertFalse(obj1.adiciona(""));
+		assertTrue(obj1.adicionaTexto("Texto1"));
+		assertFalse(obj1.adicionaTexto(""));
 	}
 
 	@Test
 	public void verificaSeContemString() throws StringNullException {
-		obj1.adiciona("Texto1");
+		obj1.adicionaTexto("Texto1");
 		assertTrue(obj1.verificaContem("Texto1"));
+		assertFalse(obj1.verificaContem("Texto2"));
+	}
+	
+	@Test
+	public void deveRemoverString() throws StringNullException {
+		obj1.adicionaTexto("Texto1");
+		assertTrue(obj1.removeTexto("Texto1"));
 	}
 
 }

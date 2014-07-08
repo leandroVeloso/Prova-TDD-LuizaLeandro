@@ -21,7 +21,7 @@ public class StringSet {
 		return true;
 	}
 
-	public boolean adiciona(String texto) throws StringNullException {
+	public boolean adicionaTexto(String texto) throws StringNullException {
 		if(verificaString(texto)){
 			stringSet.add(texto);
 			return true;
