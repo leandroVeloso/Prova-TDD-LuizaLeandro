@@ -77,5 +77,18 @@ public class TestaStringSet {
 		obj1.adicionaTexto("Texto1");
 		assertEquals("Texto1", obj1.retornaElemento(0));
 	}
+	
+	@Test
+	public void deveRetornarInterseccaoDe2StringSet() throws StringNullException{
+		obj1.adicionaTexto("Texto1");
+		obj1.adicionaTexto("Texto2");
+		obj1.adicionaTexto("Texto3");
+		
+		obj1.adicionaTexto("Texto2");
+		
+		obj1.retornaInterseccao(obj2);
+		
+		assertEquals("Texto1", obj1.retornaQuantidade());
+	}
 
 }
