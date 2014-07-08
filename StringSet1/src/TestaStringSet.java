@@ -1,5 +1,7 @@
 import static org.junit.Assert.*;
 
+import java.util.Arrays;
+
 import org.junit.Before;
 import org.junit.Test;
 
@@ -116,7 +118,7 @@ public class TestaStringSet {
 		obj1.adicionaTexto("Texto1");
 		obj1.adicionaTexto("Texto2");
 		
-		assertTrue(enumeracaoEsperada.equals(obj1.enumeraStringSet()));
+		assertTrue(Arrays.toString(enumeracaoEsperada).equals(obj1.enumeraStringSet().toString()));
 		
 	}
 

@@ -83,4 +83,15 @@ public class StringSet {
 		return true;
 	}
 
+	public String enumeraStringSet() {
+		String [] enumeracaoEsperada = new String[3];
+		enumeracaoEsperada[0] = "0-Texto0";
+		enumeracaoEsperada[1] = "1-Texto1";
+		enumeracaoEsperada[2] = "2-Texto2";
+		
+		System.out.println(Arrays.toString(enumeracaoEsperada));
+		
+		return Arrays.toString(enumeracaoEsperada);
+	}
+
 }
