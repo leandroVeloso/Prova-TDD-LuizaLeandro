@@ -78,4 +78,9 @@ public class StringSet {
 		
 	}
 
+	public boolean deletaStringSet() {
+		// TODO Auto-generated method stub
+		return true;
+	}
+
 }
