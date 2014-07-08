@@ -101,6 +101,8 @@ public class TestaStringSet {
 		obj1.adicionaTexto("Texto3");
 		
 		assertTrue(obj1.deletaStringSet());
+		assertEquals(0, obj1.retornaQuantidade());
+		assertFalse(obj1.verificaContem("Texto1"));
 	}
 
 }
