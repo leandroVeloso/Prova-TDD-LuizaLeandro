@@ -63,12 +63,13 @@ public class TestaStringSet {
 		obj1.adicionaTexto("Texto2");
 		obj2.adicionaTexto("Texto3");
 		obj2.adicionaTexto("Texto4");
-		obj3.adicionaTexto("Texto1");
-		obj3.adicionaTexto("Texto2");
-		obj3.adicionaTexto("Texto3");
-		obj3.adicionaTexto("Texto4");
+		obj1.uneStringSets(obj2);
 		
-		assertTrue(obj1.uneStringSets(obj2));
+		assertTrue(obj1.verificaContem("Texto4"));
+		assertTrue(obj1.verificaContem("Texto3"));
+		
+		assertFalse(obj1.verificaContem("Texto5"));
+		
 	}
 	
 	@Test

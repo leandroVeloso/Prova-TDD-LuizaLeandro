@@ -57,13 +57,11 @@ public class StringSet {
 		}
 	}
 
-	public boolean uneStringSets(StringSet obj2) throws StringNullException {
+	public void uneStringSets(StringSet obj2) throws StringNullException {
 		
 		for(int i=0; i<obj2.retornaQuantidade(); i++ ){
 			stringSet.add(obj2.retornaElemento(i));
 		}
-
-		return true;
 	}
 
 }
