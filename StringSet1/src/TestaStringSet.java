@@ -93,5 +93,14 @@ public class TestaStringSet {
 		assertTrue(obj1.verificaContem("Texto2"));
 		assertFalse(obj1.verificaContem("Texto1"));
 	}
+	
+	@Test
+	public void deveDeletarStringSet() throws StringNullException{
+		obj1.adicionaTexto("Texto1");
+		obj1.adicionaTexto("Texto2");
+		obj1.adicionaTexto("Texto3");
+		
+		assertTrue(obj1.deletaStringSet());
+	}
 
 }
