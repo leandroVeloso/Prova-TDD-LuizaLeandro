@@ -104,5 +104,20 @@ public class TestaStringSet {
 		assertEquals(0, obj1.retornaQuantidade());
 		assertFalse(obj1.verificaContem("Texto1"));
 	}
+	
+	@Test
+	public void deveEnumerarStringSet() throws StringNullException{
+		String [] enumeracaoEsperada = new String[3];
+		enumeracaoEsperada[0] = "0-Texto0";
+		enumeracaoEsperada[1] = "1-Texto1";
+		enumeracaoEsperada[2] = "2-Texto2";
+		
+		obj1.adicionaTexto("Texto0");
+		obj1.adicionaTexto("Texto1");
+		obj1.adicionaTexto("Texto2");
+		
+		assertTrue(enumeracaoEsperada.equals(obj1.enumeraStringSet()));
+		
+	}
 
 }
