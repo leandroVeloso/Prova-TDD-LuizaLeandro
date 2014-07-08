@@ -91,7 +91,7 @@ public class StringSet {
 			enumeracaoEsperada[i]=i+"-"+stringSet.get(i);
 		}
 		
-		System.out.println(Arrays.toString(enumeracaoEsperada));
+		//System.out.println(Arrays.toString(enumeracaoEsperada));
 		
 		return Arrays.toString(enumeracaoEsperada);
 	}
