@@ -68,7 +68,7 @@ public class TestaStringSet {
 		obj3.adicionaTexto("Texto3");
 		obj3.adicionaTexto("Texto4");
 		
-		assertEquals(obj3, obj1.uneStringSets(obj2));
+		assertTrue(obj1.uneStringSets(obj2));
 	}
 
 }

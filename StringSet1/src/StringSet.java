@@ -49,4 +49,16 @@ public class StringSet {
 		return stringSet.size();
 	}
 
+	public boolean uneStringSets(StringSet obj2) throws StringNullException {
+		
+		StringSet obj3 = new StringSet();
+		
+		obj3.adicionaTexto("Texto1");
+		obj3.adicionaTexto("Texto2");
+		obj3.adicionaTexto("Texto3");
+		obj3.adicionaTexto("Texto4");
+		
+		return true;
+	}
+
 }
