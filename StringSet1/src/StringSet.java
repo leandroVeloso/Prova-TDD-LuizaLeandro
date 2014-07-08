@@ -1,4 +1,4 @@
-import java.util.ArrayList;
+import java.util.*;
 
 
 public class StringSet {
@@ -21,13 +21,13 @@ public class StringSet {
 		return true;
 	}
 
-	public boolean adicionaTexto(String texto) throws StringNullException {
+	public String adicionaTexto(String texto) throws StringNullException {
 		if(verificaString(texto)){
 			stringSet.add(texto);
-			return true;
+			return texto;
 		}
 		
-		return false;
+		return "";
 	}
 
 	public boolean verificaContem(String texto) {
@@ -48,16 +48,21 @@ public class StringSet {
 	public int retornaQuantidade() {
 		return stringSet.size();
 	}
+	
+	public String retornaElemento(int indice){
+		if(stringSet.size() > indice){
+			return stringSet.get(indice).toString();
+		}else{
+			return "";
+		}
+	}
 
 	public boolean uneStringSets(StringSet obj2) throws StringNullException {
 		
-		StringSet obj3 = new StringSet();
-		
-		obj3.adicionaTexto("Texto1");
-		obj3.adicionaTexto("Texto2");
-		obj3.adicionaTexto("Texto3");
-		obj3.adicionaTexto("Texto4");
-		
+		for(int i=0; i<obj2.retornaQuantidade(); i++ ){
+			stringSet.add(obj2.retornaElemento(i));
+		}
+
 		return true;
 	}
 

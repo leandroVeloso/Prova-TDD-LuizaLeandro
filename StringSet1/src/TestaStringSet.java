@@ -29,8 +29,8 @@ public class TestaStringSet {
 	
 	@Test
 	public void deveAdicionarString() throws StringNullException {
-		assertTrue(obj1.adicionaTexto("Texto1"));
-		assertFalse(obj1.adicionaTexto(""));
+		assertEquals("Texto1", obj1.adicionaTexto("Texto1"));
+		assertEquals("", obj1.adicionaTexto(""));
 	}
 
 	@Test
@@ -69,6 +69,12 @@ public class TestaStringSet {
 		obj3.adicionaTexto("Texto4");
 		
 		assertTrue(obj1.uneStringSets(obj2));
+	}
+	
+	@Test
+	public void retornaElemento() throws StringNullException{
+		obj1.adicionaTexto("Texto1");
+		assertEquals("Texto1", obj1.retornaElemento(0));
 	}
 
 }
