@@ -16,6 +16,7 @@ public class TestaStringset {
 	@Test
 	public void naoDeveSerNuloOuVazia() {
 		assertFalse(obj1.verificaString(""));
+		assertFalse(obj1.verificaString(null));
 	}
 
 }
