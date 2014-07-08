@@ -37,4 +37,9 @@ public class StringSet {
 		return false;
 	}
 
+	public boolean removeTexto(String texto) {
+		// TODO Auto-generated method stub
+		return true;
+	}
+
 }
