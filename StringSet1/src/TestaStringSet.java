@@ -85,10 +85,13 @@ public class TestaStringSet {
 		obj1.adicionaTexto("Texto3");
 		
 		obj2.adicionaTexto("Texto2");
+		obj2.adicionaTexto("Texto3");
 		
 		obj1.retornaInterseccao(obj2);
 		
-		assertEquals(1, obj1.retornaQuantidade());
+		assertEquals(2, obj1.retornaQuantidade());
+		assertTrue(obj1.verificaContem("Texto2"));
+		assertFalse(obj1.verificaContem("Texto1"));
 	}
 
 }

@@ -65,8 +65,16 @@ public class StringSet {
 	}
 
 	public void retornaInterseccao(StringSet obj2) {
-		stringSet.remove(0);
-		stringSet.remove(1);
+		ArrayList<String> stringSetTemp = new ArrayList<String>() ;
+		for(int i=0; i<stringSet.size(); i++ ){
+			for(int j=0; j<obj2.retornaQuantidade(); j++ ){
+				if(stringSet.get(i).equals(obj2.retornaElemento(j))){
+					stringSetTemp.add(obj2.retornaElemento(j));
+					
+				}
+			}
+		}
+		stringSet = stringSetTemp;
 		
 	}
 
