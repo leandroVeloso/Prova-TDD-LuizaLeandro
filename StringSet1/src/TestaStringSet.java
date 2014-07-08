@@ -26,6 +26,13 @@ public class TestaStringSet {
 	@Test
 	public void deveAdicionarString() throws StringNullException {
 		assertTrue(obj1.adiciona("Texto1"));
+		assertFalse(obj1.adiciona(""));
+	}
+
+	@Test
+	public void verificaSeContemString() throws StringNullException {
+		obj1.adiciona("Texto1");
+		assertTrue(obj1.verificaContem("Texto1"));
 	}
 
 }
