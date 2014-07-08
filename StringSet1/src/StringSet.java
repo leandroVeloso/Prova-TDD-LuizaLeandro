@@ -30,4 +30,9 @@ public class StringSet {
 		return false;
 	}
 
+	public boolean verificaContem(String texto) {
+		// TODO Auto-generated method stub
+		return true;
+	}
+
 }
