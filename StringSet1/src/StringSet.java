@@ -45,4 +45,9 @@ public class StringSet {
 		return false;
 	}
 
+	public int retornaQuantidade() {
+		// TODO Auto-generated method stub
+		return 3;
+	}
+
 }
