@@ -22,5 +22,10 @@ public class TestaStringset {
 	public void deveLancarExcecaoQuandoNulo() throws StringNullException {
 		obj1.verificaString(null);
 	}
+	
+	@Test
+	public void deveAdicionarString() throws StringNullException {
+		assertTrue(obj1.adiciona("Texto1"));
+	}
 
 }
